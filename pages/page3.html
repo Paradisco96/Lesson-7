@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 6</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list nav__list--flex">
+        <li class="nav__item"><a class="nav__item-link" href="../index.html">Task 2+3</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page1.html">Task 4</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page2.html">Task 5</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page3.html">Task 6</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page4.html">Task 7</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container-overflow">
+      <div class="container__content">
+        <h1 class="container__title">Learning<span class="container__title-highlight"> CSS Properties</span></h1>
+        <div>
+          <h2 class="container__subtitle">Experimenting with overflow.
+          </h2>
+          <div class="container__box">
+            <div class="container__content container__content--float">
+
+              <img class="container__content-image container__content-image--float-left" src="../img/float-img.png"
+                alt="float-img">
+              <h3>Create a container with defined dimensions and add content that exceeds these dimensions.</h3>
+              <p class="container__description">The overflow CSS property is a powerful tool for controlling what
+                happens when content is larger than the area of its containing block. When you define a fixed width and
+                height for an element, and its inner content (like text or images) is too large to fit within those
+                confines, the content will naturally "overflow" the container's boundaries. This can lead to unsightly
+                layouts where text spills out, overlaps other elements, or simply gets cut off abruptly. The overflow
+                property provides solutions to this problem, allowing you to specify how you want the browser to handle
+                this extra content.</p>
+
+              <p class="container__description">You can set overflow to values like hidden (which clips the overflowing
+                content, making it invisible), scroll (which adds scrollbars to the container, allowing users to scroll
+                to view the hidden content), auto (which adds scrollbars only when necessary), or visible (the default
+                behavior, where content simply spills out of the box). Experimenting with these values is key to
+                understanding how they visually impact your layout and user experience. Properly managing overflow
+                ensures your designs remain clean and functional, regardless of how much content is present, providing a
+                much more controlled and aesthetically pleasing presentation.</p>
+
+              <p>While visible, hidden, scroll, and auto are the most common
+                values for the overflow property, it's worth noting that CSS also provides more granular control through
+                overflow-x and overflow-y. These properties allow you to control horizontal and vertical overflow
+                independently. For instance, you might want a container to have a horizontal scrollbar (overflow-x:
+                scroll;) but clip any vertical overflow (overflow-y: hidden;). This level of specificity is incredibly
+                useful for designing responsive components, such as data tables that might need to scroll horizontally
+                on smaller screens, or image galleries where vertical space is constrained. Thoughtful application of
+                overflow and its directional counterparts is crucial for creating robust, user-friendly interfaces that
+                adapt gracefully to varying content lengths and screen sizes, preventing unsightly content spills and
+                ensuring a smooth user experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Overflow: scroll</p>
+  </footer>
+</body>
+
+</html>

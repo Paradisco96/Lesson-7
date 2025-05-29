@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 5</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list nav__list--flex">
+        <li class="nav__item"><a class="nav__item-link" href="../index.html">Task 2+3</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page1.html">Task 4</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page2.html">Task 5</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page3.html">Task 6</a></li>
+        <li class="nav__item"><a class="nav__item-link" href="page4.html">Task 7</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="container__content">
+        <h1 class="container__title">Learning<span class="container__title-highlight"> CSS Properties</span></h1>
+        <div>
+          <h2 class="container__subtitle">Practicing with float and clear.
+          </h2>
+          <div class="container__box">
+            <div class="container__content container__content--float">
+              <img class="container__content-image  container__content-image--float-left" src="../img/float-img.png"
+                alt="float-img">
+              <h3>Create several elements and use float to make them wrap around other content.</h3>
+              <p class="container__description">In CSS, the float property is a fundamental tool for laying out
+                elements,
+                particularly for creating magazine-like text wraps or arranging elements side-by-side. When you apply
+                float to an element (like an image or a div), it takes it out of the normal document flow and shifts it
+                to
+                the left or right until it hits the edge of its containing element or another floated element. Content
+                that follows will then "wrap around" the floated item, much like text flows around an image in a
+                newspaper
+                column.</p>
+
+              <img class="container__content-image-center" src="../img/float-img-clear.png" alt="float-img-clear">
+
+              <p class="container__description">While powerful, float can sometimes lead to unexpected layout issues,
+                especially with the height of parent containers or the positioning of subsequent elements. This is
+                where
+                the clear property comes in.</p>
+
+              <p class="container__description container__description--clear">The clear property prevents an element
+                from being positioned
+                alongside a
+                floated element. By applying clear: both; (or left/right) to an element, you ensure that it always
+                appears below any preceding floated elements, effectively stopping the text wrap and creating a
+                distinct
+                break in the layout. Understanding how to effectively use both float for element positioning and clear
+                for flow control is crucial for building robust and predictable CSS layouts. Today, with the
+                widespread
+                support of Flexbox and CSS Grid, float is generally no longer recommended for full-page layouts. These
+                modern alternatives offer more intuitive, flexible, and predictable ways to build complex grid systems
+                and responsive designs.</p>
+
+              <img class="container__content-image container__content-image--float-right"
+                src="../img/float-img-right.png" alt="float-img">
+
+              <p>While modern CSS layouts often prefer Flexbox or CSS Grid for their more robust and predictable
+                behavior, understanding float and clear remains crucial. You'll still encounter them in legacy
+                codebases, and they are perfect for specific, simpler use cases like wrapping text around an image
+                within a paragraph. Mastering these properties provides a foundational understanding of how CSS handles
+                document flow and element positioning, which is valuable even as you move on to more advanced layout
+                methods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
